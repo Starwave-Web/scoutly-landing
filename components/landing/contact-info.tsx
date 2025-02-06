@@ -1,9 +1,7 @@
 import React from "react";
 import { Envelope, PhoneWhite } from "../icons";
 
-type Props = {};
-
-const ContactInfo = (props: Props) => {
+const ContactInfo = () => {
   return (
     <section className="w-full px-5 md:px-10 md:py-20 py-10">
       <div className="container mx-auto">
