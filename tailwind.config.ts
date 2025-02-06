@@ -13,6 +13,7 @@ export default {
         "hero-bg":
           "linear-gradient(to bottom right, #D2F5F5 2%, #29C7C7 35%, #141D42 100%)",
         "about-us-bg": "url('/images/about_us.png')",
+        "motivation-bg": "url('/images/our_motivation.png')",
       },
       colors: {
         "primary-blue": "#141D42",
