@@ -51,7 +51,9 @@ const SignUpForm = () => {
       const res = await fetch("/__forms.html", {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: new URLSearchParams(formData as unknown as Record<string, string>).toString(),
+        body: new URLSearchParams(
+          formData as unknown as Record<string, string>
+        ).toString(),
       });
       if (res.status === 200) {
         form.reset();
@@ -67,6 +69,7 @@ const SignUpForm = () => {
         });
       }
     } catch (error) {
+      console.log(error);
       toast({
         variant: "destructive",
         title: "Something went wrong",
