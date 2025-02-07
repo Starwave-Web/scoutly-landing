@@ -14,7 +14,7 @@ const CTA = () => {
   ];
 
   return (
-    <section className="w-full px-5 md:px-10 md:py-40 py-20">
+    <section className="w-full px-5 md:px-10 pt-20 pb-5">
       <div className="container mx-auto flex items-center flex-col-reverse lg:flex-row gap-16 lg:justify-between">
         <div className="flex flex-col items-start gap-[35px] md:gap-[70px]">
           <div className="flex flex-col items-start gap-2">

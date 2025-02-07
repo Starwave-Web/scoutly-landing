@@ -4,6 +4,7 @@ import { Cup, Rating, HockeyBat, Luggage } from "../icons";
 import ForCard from "../ui/for-card";
 import Image from "next/image";
 import ForTeamsImage from "@/assets/landing/for_teams.png";
+import { SECTIONS } from "@/lib/const";
 
 const ForTeams = () => {
   const ForTeamsCards = [
@@ -38,7 +39,7 @@ const ForTeams = () => {
   ];
 
   return (
-    <section className="w-full px-5 md:px-10 md:py-40 py-20 relative overflow-x-hidden">
+    <section id={SECTIONS.FORTEAMS} className="w-full px-5 md:px-10 md:py-40 py-20 relative overflow-x-hidden">
       <div className="container mx-auto flex flex-col gap-[30px]">
         <div className="w-2/3 md:w-1/3 self-end">
           <SectionTitle title="For Teams" />

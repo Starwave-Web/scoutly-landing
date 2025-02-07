@@ -1,10 +1,12 @@
 import Image from "next/image";
 import ScoutlyHero from "@/assets/landing/hero_mobile.png";
 import { Button } from "@/components/ui/button";
+import { SignUpDialog } from "../common/sign-up-dialog";
+import { SECTIONS } from "@/lib/const";
 
 const Hero = () => {
   return (
-    <section className="w-full px-5 md:px-10 py-[1.875rem]">
+    <section id={SECTIONS.HERO} className="w-full px-5 md:px-10 py-[1.875rem]">
       <div className="container mx-auto">
         <div className="rounded-[2.5rem] bg-hero-bg flex flex-col-reverse md:flex-row items-center">
           <Image
@@ -28,7 +30,7 @@ const Hero = () => {
                   <h2 className="text-white text-h2-mobile md:text-h2">
                     Be First to Know!
                   </h2>
-                  <Button>Sign Up</Button>
+                  <SignUpDialog trigger={<Button>Sign Up</Button>} />
                 </div>
               </div>
             </div>

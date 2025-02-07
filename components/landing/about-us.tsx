@@ -3,6 +3,7 @@ import ScoutlyLogo from "@/assets/landing/logo_scoutly_footer.png";
 import Image from "next/image";
 import SectionTitle from "../ui/section-title";
 import AboutUsCard from "../ui/about-us-card";
+import { SECTIONS } from "@/lib/const";
 
 const AboutUs = () => {
   const aboutUsCards = [
@@ -27,9 +28,9 @@ const AboutUs = () => {
   ];
 
   return (
-    <section className="w-full px-5 md:px-10 py-20 relative ">
+    <section id={SECTIONS.ABOUTUS} className="w-full px-5 md:px-10 py-20 relative ">
       <div className="container mx-auto flex justify-center lg:justify-end items-center bg-about-us-bg bg-cover lg:bg-none lg:bg-white rounded-[40px] lg:rounded-none py-4 px-4 sm:py-10 sm:px-10 lg:py-0">
-        <div className="flex flex-col items-center gap-[30px] w-[552px] z-10">
+        <div className="flex flex-col items-center gap-[30px] w-[552px] z-10 md:mr-10">
           <SectionTitle title="About Us" />
           {aboutUsCards.map((card) => (
             <AboutUsCard
