@@ -2,7 +2,7 @@
 import Image from "next/image";
 import ScoutlyLogo from "@/assets/landing/logo_scoutly_footer.png";
 import Link from "next/link";
-import { FacebookLogo, InstagramLogo, XLogo, YoutubeLogo } from "../icons";
+import { FacebookLogo, InstagramLogo, LinkedInLogo } from "../icons";
 import SignUpForm from "@/components/common/sign-up-form";
 import { scrollToSection } from "@/lib/utils";
 import { SECTIONS } from "@/lib/const";
@@ -23,20 +23,16 @@ const Footer = () => {
               to know about updates, launches, and exclusive offers!
             </p>
             <div className="flex items-center gap-[1.875rem] mt-[10px]">
-              <Link href="/">
+              <Link href="https://www.facebook.com/profile.php?id=61578280496316" target="_blank">
                 <FacebookLogo />
               </Link>
               <div className="h-5 w-px bg-white" />
-              <Link href="/">
+              <Link href="https://www.instagram.com/scoutly.site/" target="_blank">
                 <InstagramLogo />
               </Link>
               <div className="h-5 w-px bg-white" />
-              <Link href="/">
-                <XLogo />
-              </Link>
-              <div className="h-5 w-px bg-white" />
-              <Link href="/">
-                <YoutubeLogo />
+              <Link href="https://www.linkedin.com/company/scoutlyapp/" target="_blank">
+                <LinkedInLogo />
               </Link>
             </div>
           </div>
@@ -47,31 +43,31 @@ const Footer = () => {
             <ul className="text-white text-description flex flex-wrap flex-col justify-between max-h-[96px] gap-[12px]">
               <li
                 onClick={() => scrollToSection(SECTIONS.HERO)}
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-secondary-blue"
               >
                 Home
               </li>
               <li
                 onClick={() => scrollToSection(SECTIONS.ABOUTUS)}
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-secondary-blue"
               >
                 About Us
               </li>
               <li
                 onClick={() => scrollToSection(SECTIONS.FORPLAYERS)}
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-secondary-blue"
               >
                 Features
               </li>
               <li
                 onClick={() => scrollToSection(SECTIONS.FORPLAYERS)}
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-secondary-blue"
               >
                 For Players
               </li>
               <li
                 onClick={() => scrollToSection(SECTIONS.FORTEAMS)}
-                className="cursor-pointer"
+                className="cursor-pointer hover:text-secondary-blue"
               >
                 For Teams
               </li>
@@ -95,8 +91,8 @@ const Footer = () => {
               <p>Copyright 2025. Scoutly. All Right Reserved.</p>
             </div>
             <div className="flex items-center gap-4 underline">
-              <p>Terms and Conditions</p>
-              <p>Privacy Policy</p>
+              <Link href="/legal/Scoutly_Terms_and_Conditions_v2.pdf" target="_blank" className="hover:text-secondary-blue">Terms and Conditions</Link>
+              <Link href="/legal/Scoutly_Privacy_Policy_v2.pdf" target="_blank" className="hover:text-secondary-blue">Privacy Policy</Link>
             </div>
           </div>
         </div>

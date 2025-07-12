@@ -39,6 +39,7 @@ const AboutUs = () => {
               description={card.description}
             />
           ))}
+          <div className="absolute w-96 h-96 rounded-full bg-about-us-grad-bg from-[#29C7C7_0%] via-[#77E4E4_18%] to-[transparent_65%] top-[50%] right-60 -z-10 -translate-x-1/2 -translate-y-1/2"/>
         </div>
       </div>
       <Image className="hidden lg:block lg:absolute left-0 top-[40px] right-5" src={AboutUsBg} alt="about-us-bg" />

@@ -14,6 +14,9 @@ export default {
           "linear-gradient(to bottom right, #D2F5F5 2%, #29C7C7 35%, #141D42 100%)",
         "about-us-bg": "url('/images/about_us.png')",
         "motivation-bg": "url('/images/our_motivation.png')",
+        "about-us-grad-bg": "radial-gradient(circle at center, var(--tw-gradient-stops))",
+        "for-p-grad-bg": "radial-gradient(circle at bottom left, var(--tw-gradient-stops))",
+        "for-t-grad-bg": "radial-gradient(circle at top left, var(--tw-gradient-stops))",
       },
       colors: {
         "primary-blue": "#141D42",

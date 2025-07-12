@@ -3,7 +3,7 @@ import SectionTitle from "../ui/section-title";
 import { Cup, Rating, HockeyBat, Luggage } from "../icons";
 import ForCard from "../ui/for-card";
 import Image from "next/image";
-import ForTeamsImage from "@/assets/landing/for_teams.png";
+import ForTeamsImage from "@/assets/landing/for_teams.webp";
 import { SECTIONS } from "@/lib/const";
 
 const ForTeams = () => {
@@ -39,14 +39,14 @@ const ForTeams = () => {
   ];
 
   return (
-    <section id={SECTIONS.FORTEAMS} className="w-full px-5 md:px-10 md:py-40 py-20 relative overflow-x-hidden">
+    <section id={SECTIONS.FORTEAMS} className="w-full px-5 md:px-10 md:py-40 py-20 relative overflow-x-hidden bg-for-t-grad-bg from-[#29C7C7_0%] via-[#77E4E4_18%] to-[transparent_50%]">
       <div className="container mx-auto flex flex-col gap-[30px]">
         <div className="w-2/3 md:w-1/3 self-end">
           <SectionTitle title="For Teams" />
         </div>
-        <div className="flex flex-col items-center min-[1330px]:flex-row gap-[30px] md:gap-[60px] justify-end">
-          <div className="min-[1420px]:absolute -left-60">
-            <Image src={ForTeamsImage} alt="for-teams-image" />
+        <div className="flex flex-col items-center min-[1420px]:flex-row gap-[30px] md:gap-[60px] justify-end">
+          <div className="min-[1420px]:absolute -left-52">
+            <Image className="xl:w-[869px] xl:h-[668px]" src={ForTeamsImage} alt="for-teams-image" />
           </div>
           <div className="w-full min-[1409px]:w-2/3 flex flex-wrap gap-5 md:gap-10 items-center justify-center min-[1330px]:justify-end">
             {ForTeamsCards.map((card) => (
