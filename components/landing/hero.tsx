@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ScoutlyHero from "@/assets/landing/hero_mobile.png";
+import ScoutlyHero from "@/assets/landing/hero_mobile.webp";
 import { Button } from "@/components/ui/button";
 import { SignUpDialog } from "../common/sign-up-dialog";
 import { SECTIONS } from "@/lib/const";
@@ -30,7 +30,7 @@ const Hero = () => {
                   <h2 className="text-white text-h2-mobile md:text-h2">
                     Be First to Know!
                   </h2>
-                  <SignUpDialog trigger={<Button>Sign Up</Button>} />
+                  <SignUpDialog trigger={<Button className="font-semibold">Sign Up</Button>} />
                 </div>
               </div>
             </div>
